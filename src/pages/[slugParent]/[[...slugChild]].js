@@ -162,7 +162,7 @@ export async function getStaticPaths() {
     });
 
   return {
-    paths: paths.filter(({ params }) => typeof param.slugParent === 'string'),
+    paths: paths.filter(({ params }) => typeof params.slugParent === 'string'),
     fallback: false,
   };
 }
